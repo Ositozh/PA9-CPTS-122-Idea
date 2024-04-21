@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chris\\OneDrive\\Desktop\\SFML_tutorial\\SFML_tutorial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.txt",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt",
+              "RelativeDocumentMoniker": "SFML_tutorial\\README.txt",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt",
+              "RelativeToolTip": "SFML_tutorial\\README.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-21T23:34:21.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\main.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp",
+              "RelativeToolTip": "SFML_tutorial\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T23:34:59.54Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
