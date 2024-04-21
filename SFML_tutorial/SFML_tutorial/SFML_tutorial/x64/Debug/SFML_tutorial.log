@@ -1,0 +1,88 @@
+﻿  main.cpp
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(6,49): warning C4244: 'argument': conversion from 'const float' to 'unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(6,43): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(21,53): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(21,41): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(21,29): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(22,56): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(22,44): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(22,32): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(22,22): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,37): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,37): warning C4305:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,37): warning C4305:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,37): warning C4305:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,37): warning C4305:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,25): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,25): warning C4244:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,25): warning C4244:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,25): warning C4244:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(27,25): warning C4244:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,38): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,38): warning C4305:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,38): warning C4305:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,38): warning C4305:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,38): warning C4305:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,25): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,25): warning C4244:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,25): warning C4244:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,25): warning C4244:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(28,25): warning C4244:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(31,26): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(31,26): warning C4244:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(31,26): warning C4244:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(31,26): warning C4244:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(31,26): warning C4244:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,40): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,40): warning C4305:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,40): warning C4305:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,40): warning C4305:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,40): warning C4305:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,27): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,27): warning C4244:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,27): warning C4244:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,27): warning C4244:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(32,27): warning C4244:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,39): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,39): warning C4305:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,39): warning C4305:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,39): warning C4305:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,39): warning C4305:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,27): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,27): warning C4244:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,27): warning C4244:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,27): warning C4244:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(38,27): warning C4244:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,40): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,40): warning C4305:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,40): warning C4305:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,40): warning C4305:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,40): warning C4305:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,27): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,27): warning C4244:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,27): warning C4244:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,27): warning C4244:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(39,27): warning C4244:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(42,26): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(42,26): warning C4244:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(42,26): warning C4244:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(42,26): warning C4244:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(42,26): warning C4244:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,40): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,40): warning C4305:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,40): warning C4305:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,40): warning C4305:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,40): warning C4305:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,27): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,27): warning C4244:         with
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,27): warning C4244:         [
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,27): warning C4244:             T=float
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(43,27): warning C4244:         ]
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(53,52): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(53,41): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(53,33): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(57,50): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(57,32): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(58,52): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\SFML_tutorial\main.cpp(58,34): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+  SFML_tutorial.vcxproj -> C:\Users\chris\OneDrive\Desktop\SFML_tutorial\SFML_tutorial\x64\Debug\SFML_tutorial.exe
