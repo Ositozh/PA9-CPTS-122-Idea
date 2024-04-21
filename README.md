@@ -1,2 +1,3 @@
-# PA9-CPTS-122-Idea
-For now, this is an idea in the works. Racing game  based of formula one with different cars and tracks, 2D animation with sounds. 
+#dev
+This branch is where we should put code that is still being worked on. Main should ideally only have a working solution in it.
+
