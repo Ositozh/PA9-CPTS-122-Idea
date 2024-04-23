@@ -139,20 +139,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnimatedGraphics.cpp" />
+    <ClCompile Include="AnimationsHandler.cpp" />
+    <ClCompile Include="CarTypes.cpp" />
+    <ClCompile Include="functions.cpp" />
+    <ClCompile Include="GameInitializer.cpp" />
     <ClCompile Include="GraphicsLayer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Road.cpp" />
     <ClCompile Include="RoadTransition.cpp" />
     <ClCompile Include="SpeedLines.cpp" />
+    <ClCompile Include="Track.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedGraphic.hpp" />
+    <ClInclude Include="AnimationsHandler.hpp" />
+    <ClInclude Include="Car.h" />
+    <ClInclude Include="CarTypes.h" />
+    <ClInclude Include="functions.hpp" />
+    <ClInclude Include="GameInitializer.hpp" />
     <ClInclude Include="GraphicsLayer.hpp" />
     <ClInclude Include="includes.hpp" />
     <ClInclude Include="pa9.hpp" />
     <ClInclude Include="Road.hpp" />
     <ClInclude Include="RoadTransition.hpp" />
     <ClInclude Include="SpeedLines.hpp" />
+    <ClInclude Include="Track.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt" />

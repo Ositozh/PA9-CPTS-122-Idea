@@ -5,13 +5,17 @@ class GraphicsLayer {
 protected:
 	sf::VertexArray lines;
 public:
+
 	//constructor
 	GraphicsLayer();
 	//compiler destructor works here
 
 
-	//returns lines array
-	const sf::VertexArray& getLines() const;
+	//returns lines array (not a reference)
+	sf::VertexArray getLines() const;
+
+	//returns the current color of the lines
+	sf::Color getColor() const;
 
 	
 	//adds a line to the vertex array as two vertices
@@ -21,6 +25,9 @@ public:
 
 	//uses bezier curve to create curve with lines
 	void addCurve(sf::Vector2f& p0, sf::Vector2f& p1, sf::Vector2f& p2);
+
+	//clears lines
+	void clearLines();
 
 
 	//changes color of all lines to given color

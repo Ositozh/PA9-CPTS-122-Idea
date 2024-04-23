@@ -8,5 +8,5 @@ public:
 
 
 	//checks if car is within bounds and returns true if it is
-	bool carOnRoad(const int xCoord) const;
+	bool carOnRoad(const int xCoord, const int yRes) const;
 };

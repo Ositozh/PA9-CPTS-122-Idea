@@ -1,14 +1,102 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\",
+  "WorkspaceRootPath": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimatedGraphic.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\AnimatedGraphic.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\CarTypes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\CarTypes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\CarTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\CarTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GameInitializer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\GameInitializer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GameInitializer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\GameInitializer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimationsHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\AnimationsHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SpeedLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\SpeedLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Car.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\Car.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\pa9.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\pa9.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimationsHandler.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\AnimationsHandler.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\functions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\functions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimatedGraphics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\AnimatedGraphics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SpeedLines.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\SpeedLines.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\RoadTransition.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\RoadTransition.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\RoadTransition.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\RoadTransition.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GraphicsLayer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\GraphicsLayer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GraphicsLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\GraphicsLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Track.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\Track.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Road.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\Road.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Road.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\Road.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Track.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADE8449-EAD1-48B3-A77C-64409CA5690E}|SFML_tutorial\\SFML_tutorial.vcxproj|solutionrelative:SFML_tutorial\\Track.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +106,302 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "README.txt",
-              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt",
               "RelativeDocumentMoniker": "SFML_tutorial\\README.txt",
-              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\README.txt",
               "RelativeToolTip": "SFML_tutorial\\README.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-21T23:34:21.371Z",
+              "WhenOpened": "2024-04-23T20:30:52.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp",
               "RelativeDocumentMoniker": "SFML_tutorial\\main.cpp",
-              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\main.cpp",
               "RelativeToolTip": "SFML_tutorial\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-21T23:34:59.54Z"
+              "WhenOpened": "2024-04-21T23:34:59.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "pa9.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\pa9.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\pa9.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\pa9.hpp",
+              "RelativeToolTip": "SFML_tutorial\\pa9.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T23:55:57.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Car.h",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Car.h",
+              "RelativeDocumentMoniker": "SFML_tutorial\\Car.h",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Car.h",
+              "RelativeToolTip": "SFML_tutorial\\Car.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T00:44:31.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarTypes.h",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\CarTypes.h",
+              "RelativeDocumentMoniker": "SFML_tutorial\\CarTypes.h",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\CarTypes.h",
+              "RelativeToolTip": "SFML_tutorial\\CarTypes.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T00:44:47.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarTypes.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\CarTypes.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\CarTypes.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\CarTypes.cpp",
+              "RelativeToolTip": "SFML_tutorial\\CarTypes.cpp",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T00:44:40.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Track.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Track.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\Track.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Track.hpp",
+              "RelativeToolTip": "SFML_tutorial\\Track.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T00:22:17.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Track.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Track.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\Track.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Track.cpp",
+              "RelativeToolTip": "SFML_tutorial\\Track.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-22T23:35:17.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GraphicsLayer.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GraphicsLayer.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\GraphicsLayer.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GraphicsLayer.hpp",
+              "RelativeToolTip": "SFML_tutorial\\GraphicsLayer.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T23:55:39.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GraphicsLayer.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GraphicsLayer.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\GraphicsLayer.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GraphicsLayer.cpp",
+              "RelativeToolTip": "SFML_tutorial\\GraphicsLayer.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T23:55:41.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Road.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Road.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\Road.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Road.hpp",
+              "RelativeToolTip": "SFML_tutorial\\Road.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T23:55:57.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Road.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Road.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\Road.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\Road.cpp",
+              "RelativeToolTip": "SFML_tutorial\\Road.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T23:55:51.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnimatedGraphic.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimatedGraphic.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\AnimatedGraphic.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimatedGraphic.hpp",
+              "RelativeToolTip": "SFML_tutorial\\AnimatedGraphic.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T23:55:16.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AnimatedGraphics.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimatedGraphics.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\AnimatedGraphics.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimatedGraphics.cpp",
+              "RelativeToolTip": "SFML_tutorial\\AnimatedGraphics.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-22T02:36:06.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SpeedLines.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SpeedLines.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\SpeedLines.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SpeedLines.hpp",
+              "RelativeToolTip": "SFML_tutorial\\SpeedLines.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T23:55:55.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SpeedLines.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SpeedLines.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\SpeedLines.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\SpeedLines.cpp",
+              "RelativeToolTip": "SFML_tutorial\\SpeedLines.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T00:11:36.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RoadTransition.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\RoadTransition.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\RoadTransition.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\RoadTransition.hpp",
+              "RelativeToolTip": "SFML_tutorial\\RoadTransition.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T23:55:56.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RoadTransition.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\RoadTransition.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\RoadTransition.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\RoadTransition.cpp",
+              "RelativeToolTip": "SFML_tutorial\\RoadTransition.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T23:55:54.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AnimationsHandler.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimationsHandler.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\AnimationsHandler.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimationsHandler.hpp",
+              "RelativeToolTip": "SFML_tutorial\\AnimationsHandler.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-22T07:34:24.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnimationsHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimationsHandler.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\AnimationsHandler.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\AnimationsHandler.cpp",
+              "RelativeToolTip": "SFML_tutorial\\AnimationsHandler.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-22T07:34:27.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "functions.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\functions.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\functions.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\functions.hpp",
+              "RelativeToolTip": "SFML_tutorial\\functions.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-22T23:11:24.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "functions.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\functions.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\functions.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\functions.cpp",
+              "RelativeToolTip": "SFML_tutorial\\functions.cpp",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAqwGgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-22T23:13:22.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameInitializer.hpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GameInitializer.hpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\GameInitializer.hpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GameInitializer.hpp",
+              "RelativeToolTip": "SFML_tutorial\\GameInitializer.hpp",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T00:30:49.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameInitializer.cpp",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GameInitializer.cpp",
+              "RelativeDocumentMoniker": "SFML_tutorial\\GameInitializer.cpp",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Desktop\\Code\\git\\christian-iverson\\PA9\\PA9-CPTS-122-Idea\\dev\\PA9-CPTS-122-Idea\\SFML_tutorial\\SFML_tutorial\\SFML_tutorial\\GameInitializer.cpp",
+              "RelativeToolTip": "SFML_tutorial\\GameInitializer.cpp",
+              "ViewState": "AQIAAN4AAAAAAAAAAAAqwPgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T00:31:01.421Z"
             }
           ]
         }

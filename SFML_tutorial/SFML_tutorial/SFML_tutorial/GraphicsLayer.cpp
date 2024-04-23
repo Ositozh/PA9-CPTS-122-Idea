@@ -9,10 +9,16 @@ GraphicsLayer::GraphicsLayer()
 
 
 
-//returns lines array
-const sf::VertexArray& GraphicsLayer::getLines() const
+//returns lines array (not a reference)
+sf::VertexArray GraphicsLayer::getLines() const
 {
     return lines;
+}
+
+//returns the current color of the lines
+sf::Color GraphicsLayer::getColor() const
+{
+    return lines[0].color;
 }
 
 
@@ -42,6 +48,13 @@ void GraphicsLayer::addCurve(sf::Vector2f& p0, sf::Vector2f& p1, sf::Vector2f& p
         lines.append(startPoint);
         lines.append(endPoint);
     }
+}
+
+
+//clears lines
+void GraphicsLayer::clearLines()
+{
+    lines.clear();
 }
 
 
