@@ -13,7 +13,7 @@ private:
 	//stores all animations in one vector
 	std::vector<AnimatedGraphic*> animations;
 public:
-	//compiler 
+	//constructor
 	AnimationsHandler(const int setFrames = 6, const int setFPS = 10);
 
 

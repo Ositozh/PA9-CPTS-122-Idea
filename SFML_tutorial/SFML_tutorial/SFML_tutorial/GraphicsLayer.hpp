@@ -20,8 +20,8 @@ public:
 	
 	//adds a line to the vertex array as two vertices
 	void addLine(const sf::Vector2f& start, const sf::Vector2f& end);
-	void addLine(const unsigned int x1, const unsigned int y1,
-		const unsigned int x2, const unsigned int y2);
+	void addLine(const int x1, const int y1,
+		const int x2, const int y2);
 
 	//uses bezier curve to create curve with lines
 	void addCurve(sf::Vector2f& p0, sf::Vector2f& p1, sf::Vector2f& p2);

@@ -9,7 +9,6 @@
 #include "AnimationsHandler.hpp"
 #include "Car.h"
 #include "CarTypes.h"
-
 #include "functions.hpp"
 
 class GameInitializer {
@@ -20,8 +19,8 @@ private:
 	sf::Color roadColor, horizonColor, backgroundColor;
 public:
 	//constructor
-	GameInitializer(sf::RenderWindow& win, float xResInit, float yResInit, sf::Color& roadColorInit, 
-		sf::Color& horizonColorInit, sf::Color& backgroundColorInit);
+	GameInitializer(sf::RenderWindow& win, float xResInit, float yResInit, 
+		sf::Color& roadColorInit, sf::Color& horizonColorInit, sf::Color& backgroundColorInit);
 
 
 	//road initializers
@@ -63,8 +62,8 @@ public:
 
 
 	//handles track1-specific setup
-	Track loadTrack1() const;
+	Track loadTrack1(std::string& musicFilePath) const;
 
 	//handles track2-specific setup
-	Track loadTrack2() const;
+	Track loadTrack2(std::string& musicFilePath) const;
 };

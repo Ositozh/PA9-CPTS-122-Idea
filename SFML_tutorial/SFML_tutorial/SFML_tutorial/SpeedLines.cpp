@@ -2,7 +2,6 @@
 
 SpeedLines::SpeedLines(sf::RenderWindow& window) {
 	win = &window;
-	std::cout << "in";
 }
 
 

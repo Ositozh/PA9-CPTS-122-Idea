@@ -11,6 +11,6 @@ bool Road::carOnRoad(const int xCoord, const int yRes) const
             farRight = lines[i].position.x;
     }
 
-    if (xCoord > farLeft && xCoord < farRight - (40 * yRes * 0.01)) return true;
+    if (xCoord > farLeft && xCoord < farRight - (.4 * yRes )) return true;
     else return false;
 }

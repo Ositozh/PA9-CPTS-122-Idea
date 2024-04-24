@@ -3,7 +3,7 @@
 // SportsCar 
 SportsCar::SportsCar() : Car() { //max speed 5
     acceleration = 0.3;     // high acceleration
-    turningSpeed = 4;      // moderate turning speed
+    turningSpeed = 3;      // moderate turning speed
 
     //balanced car
 }
@@ -27,56 +27,60 @@ void SportsCar::update(sf::Keyboard::Key key, float deltaTime) {
         }
         break;
     case (sf::Keyboard::Left):
-        if (direction > -1 * maxTurn && timePassed > 0.3) {
-            direction -= 1;
-            if (direction > 0) {
-                spriteLocation.left = 200;
-                spriteLocation.top = 296;
-                spriteLocation.width = 40;
-                spriteLocation.height = 40;
+        if (getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+            if (direction > -1 * maxTurn && timePassed > 0.3) {
+                direction -= 1;
+                if (direction > -1) {
+                    spriteLocation.left = 200;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                else if (direction <= -1 * maxTurn) {
+                    spriteLocation.left = 36;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 44;
+                    spriteLocation.height = 40;
+                }
+                else {
+                    spriteLocation.left = 120;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                carSprite.setTextureRect(spriteLocation);
+                timePassed = 0;
             }
-            else if (direction <= -1 * maxTurn) {
-                spriteLocation.left = 36;
-                spriteLocation.top = 296;
-                spriteLocation.width = 44;
-                spriteLocation.height = 40;
-            }
-            else {
-                spriteLocation.left = 120;
-                spriteLocation.top = 296;
-                spriteLocation.width = 40;
-                spriteLocation.height = 40;
-            }
-            carSprite.setTextureRect(spriteLocation);
-            timePassed = 0;
+            carSprite.move(-turningSpeed * .001 * yRes, 0);
         }
-        carSprite.move(-turningSpeed * .001 * yRes, 0);
         break;
     case (sf::Keyboard::Right):
-        if (direction < maxTurn && timePassed > 0.3) {
-            direction += 1;
-            if (direction < 0) {
-                spriteLocation.left = 200;
-                spriteLocation.top = 296;
-                spriteLocation.width = 40;
-                spriteLocation.height = 40;
+        if (getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+            if (direction < maxTurn && timePassed > 0.3) {
+                direction += 1;
+                if (direction < 1) {
+                    spriteLocation.left = 200;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                else if (direction >= maxTurn) {
+                    spriteLocation.left = 360;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 44;
+                    spriteLocation.height = 40;
+                }
+                else {
+                    spriteLocation.left = 280;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                carSprite.setTextureRect(spriteLocation);
+                timePassed = 0;
             }
-            else if (direction >= maxTurn) {
-                spriteLocation.left = 360;
-                spriteLocation.top = 296;
-                spriteLocation.width = 44;
-                spriteLocation.height = 40;
-            }
-            else {
-                spriteLocation.left = 280;
-                spriteLocation.top = 296;
-                spriteLocation.width = 40;
-                spriteLocation.height = 40;
-            }
-            carSprite.setTextureRect(spriteLocation);
-            timePassed = 0;
+            carSprite.move(turningSpeed * .001 * yRes, 0);
         }
-        carSprite.move(turningSpeed * .001 * yRes, 0);
         break;
     case (sf::Keyboard::Down):
         if (speed > 1 && timePassed > 0.4) {
@@ -89,7 +93,7 @@ void SportsCar::update(sf::Keyboard::Key key, float deltaTime) {
 // SafetyCar 
 SafetyCar::SafetyCar() : Car() {
     acceleration = 0.1;     // Lower acceleration
-    turningSpeed = 6;      // Higher turning speed
+    turningSpeed = 5;      // Higher turning speed
 
     //Lower accereration but should be easier to control
 }
@@ -104,14 +108,84 @@ void SafetyCar::setAcceleration(float accel) { acceleration = accel; }
 float SafetyCar::getTurningSpeed() const { return turningSpeed; }
 void SafetyCar::setTurningSpeed(float turnSpeed) { turningSpeed = turnSpeed; }
 void SafetyCar::update(sf::Keyboard::Key key, float deltaTime) {
-    //where the movement code where go
+    timePassed += deltaTime;
+    sf::IntRect spriteLocation;
+    switch (key) {
+    case (sf::Keyboard::Up):
+        if (speed < 3.5 && timePassed > 0.4) {
+            setSpeed(0.05);
+            timePassed -= deltaTime;
+        }
+        break;
+    case (sf::Keyboard::Left):
+        if (getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+            if (direction > -1 * maxTurn && timePassed > 0.3) {
+                direction -= 1;
+                if (direction > -1) {
+                    spriteLocation.left = 200;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                else if (direction <= -1 * maxTurn) {
+                    spriteLocation.left = 36;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 44;
+                    spriteLocation.height = 40;
+                }
+                else {
+                    spriteLocation.left = 120;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                carSprite.setTextureRect(spriteLocation);
+                timePassed = 0;
+            }
+            carSprite.move(-turningSpeed * .001 * yRes, 0);
+        }
+        break;
+    case (sf::Keyboard::Right):
+        if (getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+            if (direction < maxTurn && timePassed > 0.3) {
+                direction += 1;
+                if (direction < 1) {
+                    spriteLocation.left = 200;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                else if (direction >= maxTurn) {
+                    spriteLocation.left = 360;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 44;
+                    spriteLocation.height = 40;
+                }
+                else {
+                    spriteLocation.left = 280;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                carSprite.setTextureRect(spriteLocation);
+                timePassed = 0;
+            }
+            carSprite.move(turningSpeed * .001 * yRes, 0);
+        }
+        break;
+    case (sf::Keyboard::Down):
+        if (speed > 1 && timePassed > 0.4) {
+            setSpeed(-0.02);
+            timePassed -= deltaTime;
+        }
+    }
 }
 
 // CopCar 
 CopCar::CopCar() : Car()
 {
     acceleration = 0.5;     // Very high acceleration
-    turningSpeed = 1.5;      // Lower turning speed
+    turningSpeed = 2;      // Lower turning speed
 
     //very fast car but harder to control
 }
@@ -126,5 +200,75 @@ void CopCar::setAcceleration(float accel) { acceleration = accel; }
 float CopCar::getTurningSpeed() const { return turningSpeed; }
 void CopCar::setTurningSpeed(float turnSpeed) { turningSpeed = turnSpeed; }
 void CopCar::update(sf::Keyboard::Key key, float deltaTime) {
-    //where the movement code where go
+    timePassed += deltaTime;
+    sf::IntRect spriteLocation;
+    switch (key) {
+    case (sf::Keyboard::Up):
+        if (speed < 7 && timePassed > 0.4) {
+            setSpeed(0.05);
+            timePassed -= deltaTime;
+        }
+        break;
+    case (sf::Keyboard::Left):
+        if (getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+            if (direction > -1 * maxTurn && timePassed > 0.3) {
+                direction -= 1;
+                if (direction > -1) {
+                    spriteLocation.left = 200;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                else if (direction <= -1 * maxTurn) {
+                    spriteLocation.left = 36;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 44;
+                    spriteLocation.height = 40;
+                }
+                else {
+                    spriteLocation.left = 120;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                carSprite.setTextureRect(spriteLocation);
+                timePassed = 0;
+            }
+            carSprite.move(-turningSpeed * .001 * yRes, 0);
+        }
+        break;
+    case (sf::Keyboard::Right):
+        if (getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+            if (direction < maxTurn && timePassed > 0.3) {
+                direction += 1;
+                if (direction < 1) {
+                    spriteLocation.left = 200;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                else if (direction >= maxTurn) {
+                    spriteLocation.left = 360;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 44;
+                    spriteLocation.height = 40;
+                }
+                else {
+                    spriteLocation.left = 280;
+                    spriteLocation.top = 296;
+                    spriteLocation.width = 40;
+                    spriteLocation.height = 40;
+                }
+                carSprite.setTextureRect(spriteLocation);
+                timePassed = 0;
+            }
+            carSprite.move(turningSpeed * .001 * yRes, 0);
+        }
+        break;
+    case (sf::Keyboard::Down):
+        if (speed > 1 && timePassed > 0.4) {
+            setSpeed(-0.02);
+            timePassed -= deltaTime;
+        }
+    }
 }

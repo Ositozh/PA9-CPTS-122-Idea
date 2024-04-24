@@ -3,73 +3,6 @@ using std::cout;
 using std::endl;
 
 
-void singlePlayer(sf::RenderWindow& window)
-
-{
-    cout << "Single Player mode" << endl;
-
-    // Create car sprite
-    sf::Texture carTexture;
-    if (!carTexture.loadFromFile("car.png"))
-    {
-        std::cerr << "Failed to load car texture!" << endl;
-        return;
-    }
-    sf::Sprite car(carTexture);
-    car.setPosition(400, 500); // Initial position of the car
-
-    // Track out-of-bounds count and time penalty
-    int outOfBoundsCount = 0;
-    sf::Time timePenalty = sf::seconds(0);
-
-    // Lap timer variables
-    auto lapStartTime = std::chrono::steady_clock::now();
-    auto lapEndTime = std::chrono::steady_clock::now();
-    sf::Font font;
-    if (!font.loadFromFile("arial.ttf"))
-
-    {
-        std::cerr << "Failed to load font!" << endl;
-        return;
-    }
-    sf::Text lapTimeText;
-    lapTimeText.setFont(font);
-    lapTimeText.setCharacterSize(20);
-    lapTimeText.setFillColor(sf::Color::White);
-    lapTimeText.setPosition(600.f, 10.f);
-
-    // Game loop
-    while (window.isOpen())
-
-    {
-        // Handle events
-        sf::Event event;
-        while (window.pollEvent(event))
-
-        {
-            if (event.type == sf::Event::Closed)
-
-            {
-                window.close();
-            }
-        }
-
-        // Update lap timer
-        updateLapTimer(lapStartTime, lapEndTime);
-
-        // Clear the window
-        window.clear();
-
-        // Draw the car
-        window.draw(car);
-
-        // Display lap time
-        displayLapTime(window, lapStartTime, lapEndTime, font, lapTimeText);
-
-        // Display the window contents
-        window.display();
-    }
-}
 
 void applyTimePenalty(int& outOfBoundsCount, sf::Time& timePenalty)
 
@@ -102,4 +35,42 @@ void displayPenaltyTime(sf::RenderWindow& window, sf::Time& timePenalty, sf::Fon
     std::string timePenaltyString = "Penalty: " + std::to_string(timePenalty.asSeconds()) + "s";
     timePenaltyText.setString(timePenaltyString);
     window.draw(timePenaltyText);
+}
+
+void updateView(sf::RenderWindow& window, const float xCoord, const float deadZoneSize) 
+
+{
+    float viewCenter = window.getView().getCenter().x;
+    sf::View view = window.getView();
+    if (xCoord < viewCenter - deadZoneSize) {
+        view.setCenter(view.getCenter().x - ((view.getCenter().x  - deadZoneSize) - xCoord), view.getCenter().y);
+    }
+    if (xCoord > viewCenter + deadZoneSize) {
+        view.setCenter(view.getCenter().x + xCoord - view.getCenter().x - deadZoneSize, view.getCenter().y);
+    }
+    window.setView(view);
+}
+
+bool consoleMenu(int& trackChoice, int& carChoice)
+
+{
+    int choice;
+    std::cout << "1: Play\n2: View Leaderboard\n3: Exit\n\n> ";
+    std::cin >> choice;
+    switch (choice) {
+    case 1:
+        system("cls");
+        std::cout << "1: Track 1\n2: Track 2\n\n> ";
+        std::cin >> trackChoice;
+        system("cls");
+        std::cout << "1: Sports Car (balanced)\n2: Safety Car (controllable)\n3: Cop Car (fast)\n\n> ";
+        std::cin >> carChoice;
+        break;
+    case 2:
+        //leaderboard viewing code
+        break;
+    case 3:
+        return false;
+    }
+    return true;
 }

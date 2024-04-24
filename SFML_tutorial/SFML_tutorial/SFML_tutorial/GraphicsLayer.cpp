@@ -30,8 +30,8 @@ void GraphicsLayer::addLine(const sf::Vector2f& start, const sf::Vector2f& end)
     lines.append(sf::Vertex(start));
     lines.append(sf::Vertex(end));
 }
-void GraphicsLayer::addLine(const unsigned int x1, const unsigned int y1,
-    const unsigned int x2, const unsigned int y2) 
+void GraphicsLayer::addLine(const int x1, const int y1,
+    const int x2, const int y2) 
 {
     sf::Vector2f start(x1, y1), end(x2, y2);
     addLine(start, end);

@@ -4,27 +4,58 @@ int main() {
     const int frames = 12;
     const float yRes = 1080;
     float xRes = 16.0 / 9 * yRes;
-    sf::RenderWindow window(sf::VideoMode(xRes, yRes), "PA9 Graphics");
-    sf::Clock clock; //for time normalization
+    sf::Clock clock;
 
+    //game initialization
 
-    //Music Stuff
-    /*
+    sf::Color roadColor;
+    sf::Color horizonColor;
     sf::Music music;
-    music.openFromFile("");
+
+    Track track;
+    Car* car;
+    int trackChoice = 0, carChoice = 0;
+    std::string musicFilePath;
+    bool runGame;
+
+
+    while (trackChoice < 1 || trackChoice > 2 || carChoice < 1 || carChoice > 3) {
+        runGame = consoleMenu(trackChoice, carChoice);
+    }
+    sf::RenderWindow window(sf::VideoMode(xRes, yRes), "PA9 Graphics");
+
+    if (trackChoice == 1) {
+        roadColor = sf::Color(220, 40, 60);
+        horizonColor = sf::Color(160, 40, 200);
+    }
+    else {
+        roadColor = sf::Color(40, 40, 220);
+        horizonColor = sf::Color(100, 0, 210);
+    }
+    //make initializer using selected colors, then assign track and music
+    GameInitializer initializer(window, xRes, yRes, roadColor, horizonColor, horizonColor);
+    if (trackChoice == 1) {
+        track = initializer.loadTrack1(musicFilePath);
+    }
+    else {
+        track = initializer.loadTrack2(musicFilePath);
+    }
+    //initialize car based on selection
+    if (carChoice == 1) car = initializer.makeSportsCar();
+    else if (carChoice == 2) car = initializer.makeSafetyCar();
+    else car = initializer.makeCopCar();
+
+    track.setCurrentState(straight);
+    car->setSpeed(4);
+    music.openFromFile(musicFilePath);
     music.setLoop(true);
+    music.setVolume(10);
     music.play();
-    */
 
-
-    //Colors
-    sf::Color roadColor(220, 50, 50);
-    sf::Color horizonColor(160, 50, 200);
 
 
 
     //initialization of game items
-    GameInitializer initializer(window, xRes, yRes, roadColor, horizonColor, horizonColor);
     Road straightRoad = initializer.makeStraight();
     Road leftRoad = initializer.makeLeft();
     Road rightRoad = initializer.makeRight();
@@ -44,10 +75,9 @@ int main() {
     RoadTransition sharpToLeft = initializer.makeSharpToLeft();
     RoadTransition sharpToRight = initializer.makeSharpToRight();
 
-    SpeedLines straightMoving(window);
     SpeedLines speed1 = initializer.makeSpeed1Lines();
     SpeedLines speed2 = initializer.makeSpeed2Lines();
-    //SpeedLines speed3 = initializer.makeSpeed3Lines();
+    SpeedLines speed3 = initializer.makeSpeed3Lines();
 
     AnimationsHandler roadTransitionsHandler(frames, frames * 1.5);
     roadTransitionsHandler.add(&straightToLeft);
@@ -62,14 +92,7 @@ int main() {
     AnimationsHandler speedLinesHandler(frames, frames * 3);
     speedLinesHandler.add(&speed1);
     speedLinesHandler.add(&speed2);
-    //speedLinesHandler.add(&speed3);
-
-
-    //will be initialized during game depending on player selection
-    Track track = initializer.loadTrack1();
-    track.setCurrentState(straight);
-    Car* car = initializer.makeSportsCar();
-    car->setSpeed(4);
+    speedLinesHandler.add(&speed3);
 
     
 
@@ -106,10 +129,11 @@ int main() {
 
 
 
+    sf::View fixedView(sf::FloatRect(0,0,xRes, yRes));
+    sf::View gameView;
 
-
-    //MAIN GAME LOOP MAIN GAME LOOP
-    while (window.isOpen()) //MAIN GAME LOOP MAIN GAME LOOP
+    //MAIN GAME LOOP
+    while (window.isOpen() && runGame)
     {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -147,7 +171,7 @@ int main() {
 
         //update distance
         if (updateDistanceTime >= 0.05) {
-            distance += car->getSpeed() / 2;
+            distance += car->getSpeed() / 3;
             updateDistanceTime = 0;
         }
 
@@ -219,40 +243,72 @@ int main() {
                 if (straightToLeft.getFrame() == frames) {
                     straightToLeft.toggle();
                 }
+                if (car->getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+                    car->getSprite().move(car->getSpeed() / 4, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / 4, 0);
+                }
             }
             else if (straightToRight.isOn()) {
                 if (straightToRight.getFrame() == frames) {
                     straightToRight.toggle();
+                }
+                if (car->getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+                    car->getSprite().move(car->getSpeed() / -4, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / -4, 0);
                 }
             }
             else if (leftToStraight.isOn()) {
                 if (leftToStraight.getFrame() == frames) {
                     leftToStraight.toggle();
                 }
+                if (car->getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+                    car->getSprite().move(car->getSpeed() / 4, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / 4, 0);
+                }
             }
             else if (rightToStraight.isOn()) {
                 if (rightToStraight.getFrame() == frames) {
                     rightToStraight.toggle();
+                }
+                if (car->getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+                    car->getSprite().move(car->getSpeed() / -4, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / -4, 0);
                 }
             }
             else if (sharpToLeft.isOn()) {
                 if (sharpToLeft.getFrame() == frames) {
                     sharpToLeft.toggle();
                 }
+                if (car->getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+                    car->getSprite().move(car->getSpeed() / 1.7, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / 1.7, 0);
+                }
             }
             else if (sharpToRight.isOn()) {
                 if (sharpToRight.getFrame() == frames) {
                     sharpToRight.toggle();
+                }
+                if (car->getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+                    car->getSprite().move(car->getSpeed() / -1.7, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / -1.7, 0);
                 }
             }
             else if (leftToSharp.isOn()) {
                 if (leftToSharp.getFrame() == frames) {
                     leftToSharp.toggle();
                 }
+                if (car->getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+                    car->getSprite().move(car->getSpeed() / 1.7, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / 1.7, 0);
+                }
             }
             else if (rightToSharp.isOn()) {
                 if (rightToSharp.getFrame() == frames) {
                     rightToSharp.toggle();
+                }
+                if (car->getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+                    car->getSprite().move(car->getSpeed() / -1.7, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / -1.7, 0);
                 }
             }
             else {
@@ -290,6 +346,10 @@ int main() {
                     }
                 }
                 leftRoad.draw(window);
+                if (car->getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+                    car->getSprite().move(car->getSpeed() / 2, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / 2, 0);
+                }
             }
             else if (track.getCurrentState() == right) {
                 if (!rightRoad.carOnRoad(car->getSprite().getPosition().x, yRes)
@@ -301,6 +361,10 @@ int main() {
                     }
                 }
                 rightRoad.draw(window);
+                if (car->getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+                    car->getSprite().move(car->getSpeed() / -2, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / -2, 0);
+                }
             }
             else if (track.getCurrentState() == sharpLeft) {
                 if (!sharpLeftRoad.carOnRoad(car->getSprite().getPosition().x, yRes)
@@ -312,6 +376,10 @@ int main() {
                     }
                 }
                 sharpLeftRoad.draw(window);
+                if (car->getSprite().getPosition().x < 1.2 * 16 / 9 * yRes - .4 * yRes) {
+                    car->getSprite().move(car->getSpeed() / 1.25, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / 1.25, 0);
+                }
             }
             else if (track.getCurrentState() == sharpRight) {
                 if (!sharpRightRoad.carOnRoad(car->getSprite().getPosition().x, yRes)
@@ -323,6 +391,10 @@ int main() {
                     }
                 }
                 sharpRightRoad.draw(window);
+                if (car->getSprite().getPosition().x > -.2 * 16 / 9 * yRes) {
+                    car->getSprite().move(car->getSpeed() / -1.25, 0);
+                    updateView(window, window.getView().getCenter().x + car->getSpeed() / -1.25, 0);
+                }
             }
         }
 
@@ -335,13 +407,14 @@ int main() {
             speed2.setOn();
         }
         else speed2.setOff();
+        if (car->getSpeed() > 5) {
+            speed3.setOn();
+        }
 
 
 
-        //update animations before drawing them
+        //update road animations before drawing them
         roadTransitionsHandler.updateFrames(deltaTime);
-
-        speedLinesHandler.updateFrames(deltaTime); //also draws
 
 
         //set updated road animations back to road color
@@ -355,18 +428,35 @@ int main() {
         sharpToRight.setColor(roadColor);
 
 
+
         //draw everything to be on screen
         roadTransitionsHandler.draw(window);
         horizonLine.draw(window);
         car->draw(window);
 
 
+        //adjust view based on car movement
+        updateView(window, car->getSprite().getPosition().x + (yRes * .2), xRes * 0.2);
+
+
+        //timers and speed lines don't move with game
+        timePenaltyText.setPosition(window.getView().getCenter().x, 10.0f);
+        lapTimeText.setPosition(window.getView().getCenter().x - 150, 10.0f);
+        gameView = window.getView();
+        window.setView(fixedView);
+        speedLinesHandler.updateFrames(deltaTime);
+        window.setView(gameView);
+
+        //update displayed timers
         updateLapTimer(lapStartTime, lapEndTime);
         displayLapTime(window, lapStartTime, lapEndTime, font, lapTimeText);
         displayPenaltyTime(window, timePenalty, font, timePenaltyText);
 
+
         window.display();
     }
+    system("cls");
+    std::cout << lapTimeText.getString().toAnsiString() << timePenaltyText.getString().toAnsiString();
 
 
     return 0;
