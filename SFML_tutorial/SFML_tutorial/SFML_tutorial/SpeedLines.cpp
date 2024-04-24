@@ -12,7 +12,7 @@ void SpeedLines::drawFrame(sf::RenderWindow& window, const int start, const int 
 	}
 }
 
-//changes lines for a new frame of the animation
+//calculates which vertices from lines to draw with drawFrame
 void SpeedLines::newFrame(const int frames)
 {
 	if (frame == frames * 2) frame = 0;

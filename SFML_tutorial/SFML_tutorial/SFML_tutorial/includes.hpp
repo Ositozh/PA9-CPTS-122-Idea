@@ -8,7 +8,7 @@
 #include "Road.hpp"
 #include "RoadTransition.hpp"
 #include "SpeedLines.hpp"
+#include "MovingObject.hpp"
 #include "AnimationsHandler.hpp"
-#include "GameInitializer.hpp"
-
+#include "InitializerHelper.hpp"
 #include "functions.hpp"

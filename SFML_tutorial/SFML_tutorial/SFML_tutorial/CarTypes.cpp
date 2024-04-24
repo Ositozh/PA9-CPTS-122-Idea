@@ -3,7 +3,7 @@
 // SportsCar 
 SportsCar::SportsCar() : Car() { //max speed 5
     acceleration = 0.3;     // high acceleration
-    turningSpeed = 3;      // moderate turning speed
+    turningSpeed = 3.2;      // moderate turning speed
 
     //balanced car
 }
@@ -22,7 +22,7 @@ void SportsCar::update(sf::Keyboard::Key key, float deltaTime) {
     switch (key) {
     case (sf::Keyboard::Up):
         if (speed < 5 && timePassed > 0.4) {
-            setSpeed(0.05);
+            setSpeed(0.025);
             timePassed -= deltaTime;
         }
         break;
@@ -112,8 +112,8 @@ void SafetyCar::update(sf::Keyboard::Key key, float deltaTime) {
     sf::IntRect spriteLocation;
     switch (key) {
     case (sf::Keyboard::Up):
-        if (speed < 3.5 && timePassed > 0.4) {
-            setSpeed(0.05);
+        if (speed < 4.2 && timePassed > 0.4) {
+            setSpeed(0.025);
             timePassed -= deltaTime;
         }
         break;
@@ -185,7 +185,7 @@ void SafetyCar::update(sf::Keyboard::Key key, float deltaTime) {
 CopCar::CopCar() : Car()
 {
     acceleration = 0.5;     // Very high acceleration
-    turningSpeed = 2;      // Lower turning speed
+    turningSpeed = 2.8;      // Lower turning speed
 
     //very fast car but harder to control
 }
@@ -204,8 +204,8 @@ void CopCar::update(sf::Keyboard::Key key, float deltaTime) {
     sf::IntRect spriteLocation;
     switch (key) {
     case (sf::Keyboard::Up):
-        if (speed < 7 && timePassed > 0.4) {
-            setSpeed(0.05);
+        if (speed < 6.5 && timePassed > 0.4) {
+            setSpeed(0.025);
             timePassed -= deltaTime;
         }
         break;

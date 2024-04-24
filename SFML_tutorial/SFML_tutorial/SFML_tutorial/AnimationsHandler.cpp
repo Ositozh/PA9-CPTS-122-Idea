@@ -16,6 +16,11 @@ void AnimationsHandler::add(AnimatedGraphic* newAnimation)
 	animations.push_back(newAnimation);
 }
 
+//changes framerate
+void AnimationsHandler::setFrameRate(const int newFPS) {
+	frameRate = newFPS;
+}
+
 
 //calls newFrame in every animation
 void AnimationsHandler::updateFrames(const float deltaTime)

@@ -1,6 +1,6 @@
 #pragma once
 #include "pa9.hpp"
-#include "GameInitializer.hpp"
+#include "InitializerHelper.hpp"
 
 
 

@@ -42,10 +42,13 @@
     <ClCompile Include="Track.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameInitializer.cpp">
+    <ClCompile Include="InitializerHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CarTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -80,13 +83,16 @@
     <ClInclude Include="Track.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameInitializer.hpp">
+    <ClInclude Include="InitializerHelper.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Car.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CarTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingObject.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

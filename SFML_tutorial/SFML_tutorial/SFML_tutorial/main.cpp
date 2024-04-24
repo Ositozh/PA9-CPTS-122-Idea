@@ -1,21 +1,28 @@
 #include "includes.hpp"
 
 int main() {
-    const int frames = 12;
+    const int frames = 20;
     const float yRes = 1080;
     float xRes = 16.0 / 9 * yRes;
     sf::Clock clock;
 
-    //game initialization
+
+
+
+    //initialization of track-depended game items
 
     sf::Color roadColor;
     sf::Color horizonColor;
+    sf::Color backgroundColor;
     sf::Music music;
 
     Track track;
     Car* car;
     int trackChoice = 0, carChoice = 0;
     std::string musicFilePath;
+    GraphicsLayer background;
+    MovingObject move1;
+    MovingObject move2;
     bool runGame;
 
 
@@ -25,59 +32,68 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(xRes, yRes), "PA9 Graphics");
 
     if (trackChoice == 1) {
-        roadColor = sf::Color(220, 40, 60);
-        horizonColor = sf::Color(160, 40, 200);
+        roadColor = sf::Color(220, 0, 60);
+        horizonColor = sf::Color(180, 35, 130);
+        backgroundColor = sf::Color(190, 0, 180);
     }
     else {
-        roadColor = sf::Color(40, 40, 220);
-        horizonColor = sf::Color(100, 0, 210);
+        roadColor = sf::Color(60, 0, 200);
+        horizonColor = sf::Color(40, 96, 210);
+        backgroundColor = sf::Color(30, 60, 230);
     }
     //make initializer using selected colors, then assign track and music
-    GameInitializer initializer(window, xRes, yRes, roadColor, horizonColor, horizonColor);
+    InitializerHelper helper(window, xRes, yRes, roadColor, horizonColor, backgroundColor);
     if (trackChoice == 1) {
-        track = initializer.loadTrack1(musicFilePath);
+        track = helper.loadTrack1(musicFilePath);
+        background = helper.makeBackground1();
+        move1 = helper.makeTrack1Move1();
+        move2 = helper.makeTrack1Move2();
     }
     else {
-        track = initializer.loadTrack2(musicFilePath);
+        track = helper.loadTrack2(musicFilePath);
+        background = helper.makeBackground2();
+        move1 = helper.makeTrack2Move1();
+        move2 = helper.makeTrack2Move2();
     }
     //initialize car based on selection
-    if (carChoice == 1) car = initializer.makeSportsCar();
-    else if (carChoice == 2) car = initializer.makeSafetyCar();
-    else car = initializer.makeCopCar();
+    if (carChoice == 1) car = helper.makeSportsCar();
+    else if (carChoice == 2) car = helper.makeSafetyCar();
+    else car = helper.makeCopCar();
 
     track.setCurrentState(straight);
-    car->setSpeed(4);
+    car->setSpeed(2);
     music.openFromFile(musicFilePath);
     music.setLoop(true);
-    music.setVolume(10);
+    music.setVolume(8);
     music.play();
 
+    AnimationsHandler movingObjectsHandler(frames * 6, frames * 2);
+    movingObjectsHandler.add(&move1);
+    movingObjectsHandler.add(&move2);
 
+    //initialization of non track-dependent game items
+    Road straightRoad = helper.makeStraight();
+    Road leftRoad = helper.makeLeft();
+    Road rightRoad = helper.makeRight();
+    Road sharpLeftRoad = helper.makeSharpLeft();
+    Road sharpRightRoad = helper.makeSharpRight();
+    GraphicsLayer horizonLine = helper.makeHorizon();
 
-
-    //initialization of game items
-    Road straightRoad = initializer.makeStraight();
-    Road leftRoad = initializer.makeLeft();
-    Road rightRoad = initializer.makeRight();
-    Road sharpLeftRoad = initializer.makeSharpLeft();
-    Road sharpRightRoad = initializer.makeSharpRight();
-    GraphicsLayer horizonLine = initializer.makeHorizon();
-    GraphicsLayer background = initializer.makeBackground();
 
 
     //initialize animations
-    RoadTransition straightToLeft = initializer.makeStraightToLeft();
-    RoadTransition straightToRight = initializer.makeStraightToRight();
-    RoadTransition leftToStraight = initializer.makeLeftToStraight();
-    RoadTransition rightToStraight = initializer.makeRightToStraight();
-    RoadTransition leftToSharp = initializer.makeLeftToSharp();
-    RoadTransition rightToSharp = initializer.makeRightToSharp();
-    RoadTransition sharpToLeft = initializer.makeSharpToLeft();
-    RoadTransition sharpToRight = initializer.makeSharpToRight();
+    RoadTransition straightToLeft = helper.makeStraightToLeft();
+    RoadTransition straightToRight = helper.makeStraightToRight();
+    RoadTransition leftToStraight = helper.makeLeftToStraight();
+    RoadTransition rightToStraight = helper.makeRightToStraight();
+    RoadTransition leftToSharp = helper.makeLeftToSharp();
+    RoadTransition rightToSharp = helper.makeRightToSharp();
+    RoadTransition sharpToLeft = helper.makeSharpToLeft();
+    RoadTransition sharpToRight = helper.makeSharpToRight();
 
-    SpeedLines speed1 = initializer.makeSpeed1Lines();
-    SpeedLines speed2 = initializer.makeSpeed2Lines();
-    SpeedLines speed3 = initializer.makeSpeed3Lines();
+    SpeedLines speed1 = helper.makeSpeed1Lines();
+    SpeedLines speed2 = helper.makeSpeed2Lines();
+    SpeedLines speed3 = helper.makeSpeed3Lines();
 
     AnimationsHandler roadTransitionsHandler(frames, frames * 1.5);
     roadTransitionsHandler.add(&straightToLeft);
@@ -89,15 +105,18 @@ int main() {
     roadTransitionsHandler.add(&sharpToLeft);
     roadTransitionsHandler.add(&sharpToRight);
 
-    AnimationsHandler speedLinesHandler(frames, frames * 3);
+    AnimationsHandler speedLinesHandler(frames * 2, frames * 8);
     speedLinesHandler.add(&speed1);
     speedLinesHandler.add(&speed2);
     speedLinesHandler.add(&speed3);
 
+    MovingObject finishLine = helper.makeFinishLine();
+    movingObjectsHandler.add(&finishLine);
+
     
 
 
-    float deltaTime, totalTime = 0, penaltyCooldown = 0, updateDistanceTime = 0, distance = 0;
+    float deltaTime, totalTime = 0, penaltyCooldown = 0, updateDistanceTime = 0, showMovetime = 0, distance = 0;
     int trackIndex = 0;
     bool inAnimation = false; //indicates if a road animation is currently playing
 
@@ -132,6 +151,8 @@ int main() {
     sf::View fixedView(sf::FloatRect(0,0,xRes, yRes));
     sf::View gameView;
 
+    int moveNumber = 1; //for moving objects
+
     //MAIN GAME LOOP
     while (window.isOpen() && runGame)
     {
@@ -154,14 +175,6 @@ int main() {
             car->update(sf::Keyboard::Down, deltaTime);
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
             car->update(sf::Keyboard::Right, deltaTime);
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-            car->update(sf::Keyboard::Up, deltaTime);
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-            car->update(sf::Keyboard::Left, deltaTime);
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-            car->update(sf::Keyboard::Down, deltaTime);
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-            car->update(sf::Keyboard::Right, deltaTime);
 
 
         //updates clock for animations and distance
@@ -170,20 +183,19 @@ int main() {
         updateDistanceTime += deltaTime;
 
         //update distance
-        if (updateDistanceTime >= 0.05) {
-            distance += car->getSpeed() / 3;
+        if (updateDistanceTime >= 0.1) {
+            distance += car->getSpeed() / .8;
             updateDistanceTime = 0;
         }
 
         //updates road according to track
-        if (track.getDistances()[trackIndex] <= distance) {
+        if (track.getDistances()[trackIndex] <= distance && track.getCurrentState() != finish) {
             if (track.getCurrentState() == straight) {
                 track.setCurrentState(track.getRoadStates()[trackIndex]);
                 if (track.getCurrentState() == finish) {
-                    window.close();
-                    break;
+                    finishLine.setOn();
                 }
-                if (track.getCurrentState() == left) {
+                else if (track.getCurrentState() == left) {
                     straightToLeft.toggle();
                 }
                 else {
@@ -192,10 +204,6 @@ int main() {
             }
             else if (track.getCurrentState() == left) {
                 track.setCurrentState(track.getRoadStates()[trackIndex]);
-                if (track.getCurrentState() == finish) {
-                    window.close();
-                    break;
-                }
                 if (track.getCurrentState() == straight) {
                     leftToStraight.toggle();
                 }
@@ -205,11 +213,7 @@ int main() {
             }
             else if (track.getCurrentState() == right) {
                 track.setCurrentState(track.getRoadStates()[trackIndex]);
-                if (track.getCurrentState() == finish) {
-                    window.close();
-                    break;
-                }
-                if (track.getCurrentState() == left) {
+                if (track.getCurrentState() == straight) {
                     rightToStraight.toggle();
                 }
                 else {
@@ -218,26 +222,29 @@ int main() {
             }
             else if (track.getCurrentState() == sharpLeft) {
                 track.setCurrentState(track.getRoadStates()[trackIndex]);
-                if (track.getCurrentState() == finish) {
-                    window.close();
-                    break;
-                }
                 sharpToLeft.toggle();
             }
             else {
                 track.setCurrentState(track.getRoadStates()[trackIndex]);
-                if (track.getCurrentState() == finish) {
-                    window.close();
-                    break;
-                }
                 sharpToRight.toggle();
             }
-            inAnimation = true;
-            trackIndex++;
+            if (track.getCurrentState() != finish) {
+                inAnimation = true;
+                trackIndex++;
+            }
+        }
+        else if (track.getCurrentState() == finish) {
+            if (finishLine.getLines()[0].position.y >= .64 * yRes) {
+                window.close();
+                system("cls");
+                std::cout << lapTimeText.getString().toAnsiString() <<
+                    std::endl << timePenaltyText.getString().toAnsiString();
+                break;
+            }
         }
         window.clear();
 
-        //keeps track of when roads are transition to display them correctly
+        //keeps track of when roads are in transition to display them correctly
         if (inAnimation) {
             if (straightToLeft.isOn()) {
                 if (straightToLeft.getFrame() == frames) {
@@ -325,7 +332,8 @@ int main() {
             }
         }
         else { //display stationary road state (no road transition is active)
-            if (track.getCurrentState() == straight) {
+            if (track.getCurrentState() == straight
+                 || track.getCurrentState() == finish) {
                 if (!straightRoad.carOnRoad(car->getSprite().getPosition().x, yRes)
                     || !straightRoad.carOnRoad(car->getSprite().getPosition().x, yRes)) {
                     penaltyCooldown += deltaTime;
@@ -399,23 +407,45 @@ int main() {
         }
 
         //check car speed to play correct speedlines animation
-        if (car->getSpeed() > 2) {
+        if (car->getSpeed() > 3.3) {
             speed1.setOn();
         }
         else speed1.setOff();
-        if (car->getSpeed() > 4) {
+        if (car->getSpeed() > 4.1) {
             speed2.setOn();
         }
         else speed2.setOff();
-        if (car->getSpeed() > 5) {
+        if (car->getSpeed() > 6) {
             speed3.setOn();
+        }
+        
+        //moving objects on sides of road
+        showMovetime += deltaTime;
+        if (showMovetime > 4) {
+            if (moveNumber == 1) {
+                move1.setOn();
+                moveNumber = 2;             
+            }
+            else {
+               move2.setOn();
+               moveNumber = 1;
+            }
+            showMovetime = 0;
+        }
+        movingObjectsHandler.setFrameRate(car->getSpeed() * 3 + frames / 2);
+        movingObjectsHandler.updateFrames(deltaTime);
+
+        if (move1.isOn() && track.getCurrentState() == sharpLeft) {
+            if(move1.getFrame() < 2) move1.shiftX(-xRes * .008);
+        }
+        if (move2.isOn() && track.getCurrentState() == sharpRight) {
+            if (move2.getFrame() < 2) move2.shiftX(xRes * .008);
         }
 
 
 
         //update road animations before drawing them
         roadTransitionsHandler.updateFrames(deltaTime);
-
 
         //set updated road animations back to road color
         straightToLeft.setColor(roadColor);
@@ -428,15 +458,16 @@ int main() {
         sharpToRight.setColor(roadColor);
 
 
-
         //draw everything to be on screen
+        background.draw(window);
         roadTransitionsHandler.draw(window);
+        movingObjectsHandler.draw(window);
         horizonLine.draw(window);
         car->draw(window);
 
 
         //adjust view based on car movement
-        updateView(window, car->getSprite().getPosition().x + (yRes * .2), xRes * 0.2);
+        updateView(window, car->getSprite().getPosition().x + (yRes * .2), xRes * 0.09);
 
 
         //timers and speed lines don't move with game
@@ -455,8 +486,6 @@ int main() {
 
         window.display();
     }
-    system("cls");
-    std::cout << lapTimeText.getString().toAnsiString() << timePenaltyText.getString().toAnsiString();
 
 
     return 0;

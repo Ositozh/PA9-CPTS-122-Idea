@@ -12,6 +12,6 @@ public:
 	//compiler destructor works here
 	
 
-	//changes lines for a new frame of the animation
+	//calculates which vertices from lines to draw with drawFrame
 	void newFrame(const int frames);
 };

@@ -16,6 +16,9 @@ public:
 	//constructor
 	AnimationsHandler(const int setFrames = 6, const int setFPS = 10);
 
+	//changes frameRate
+	void setFrameRate(const int newFPS);
+
 
 	//adds a new animation to the animations vector
 	void add(AnimatedGraphic* newAnimation);
